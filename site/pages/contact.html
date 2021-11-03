@@ -24,7 +24,7 @@
 					<ul class="navbar-nav ms-auto mb-2 mb-sm-0 ">
 						<li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">En savoir plus</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Actualités</a></li>
+						<li class="nav-item"><a class="nav-link" href="../pages/actus.html">Actualités</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Documents</a>
 							<ul class="dropdown-menu" aria-labelledby="dropdown">
@@ -123,7 +123,7 @@
 						<a href="../index.html"><img class="svgfill" src="../img/home.svg" width="32px"> Accueil</a>
 					</div>
 					<div>
-						<a href="#"><img class="svgfill" src="../img/news.svg" width="32px"> Actualités</a>
+						<a href="../pages/actus.html"><img class="svgfill" src="../img/news.svg" width="32px"> Actualités</a>
 					</div>
 					<div>
 						<a href="../pages/galerie.html"><img class="svgfill" src="../img/gallery.svg" width="32px"> Galerie</a>
@@ -144,58 +144,6 @@
 		</footer>
 		<!--Bootstrap Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-		<script>
-			function myFuLan() {
-				  var x = document.getElementById("contLan");
-				  var y = document.getElementById("contAve");
-				  var z = document.getElementById("contFou");
-				  if (x.style.display === "block") {
-					x.style.display = "none";
-					y.style.display = "none";
-					z.style.display = "none";
-					  
-				}
-				 else {
-					y.style.display = "none";
-					z.style.display = "none";
-					x.style.display = "block";
-					  
-				}
-			}
-			function myFuAve() {
-				  var x = document.getElementById("contAve");
-				  var y = document.getElementById("contLan");
-				  var z = document.getElementById("contFou");
-				  if (x.style.display === "block") {
-					x.style.display = "none";
-					y.style.display = "none";
-					z.style.display = "none";
-					  
-				}
-				 else {
-					y.style.display = "none";
-					z.style.display = "none";
-					x.style.display = "block";
-					  
-				}
-			}
-			function myFuFou() {
-				  var x = document.getElementById("contFou");
-				  var y = document.getElementById("contLan");
-				  var z = document.getElementById("contAve");
-				  if (x.style.display === "block") {
-					x.style.display = "none";
-					y.style.display = "none";
-					z.style.display = "none";
-					  
-				}
-				 else {
-					y.style.display = "none";
-					z.style.display = "none";
-					x.style.display = "block";
-					  
-				}
-			}
-		</script>
+		<script type="text/javascript" src="../js/script.js"></script>
 	</body>
 </html>
