@@ -42,8 +42,11 @@
 		<main>
 			<!--header-->
 			<header class="container">
-                <img class="anim1" src="../img/anim1.svg">
-                <img class="anim2" src="../img/anim2.svg">
+				<img id="anim1" src="../img/anim7.svg">
+				<img id="anim2" src="../img/anim1.svg">
+				<img id="anim3" src="../img/anim2.svg">
+				<img id="anim4" src="../img/anim5.svg">
+				<img id="anim5" src="../img/anim4.svg">
 				<div class="row align-items-end">
 					<div class="col-lg-3 d-none d-lg-block upani" id="imgle">
 						<img src="../img/femme_pensante.png" alt="image femme" width="250px">
@@ -63,31 +66,45 @@
 					</div>
 				</div>
 			</header>
-                <div class="container entete">
-                    <h2>Contact</h2>
-                </div>
+			<div class="container entete">
+				<h2>Contact</h2>
+			</div>
 			<section>
-                <div class="container">
-                    <div class="row text-center my-5">
-                        <!--button to display correct contact info-->
-                        <h2>Sur cette page tu trouveras toutes les informations utiles pour nous contacter !</h2>
-                            <div class="col">
-                                <button type="button" class="btn btn-primary"   onclick="myFuLan()">Landrecies</button>
-                                <button type="button" class="btn btn-primary" onclick="myFuAve()">Avesnes-sur-Helpe</button>
-                                <button type="button" class="btn btn-primary" onclick="myFuFou()">Fourmies</button>
-                            </div>
-                    </div>
-                </div>
-				
-				<!--contact landrecies-->
-				<div class="container" id="contLan">
-                    
+				<div class="container">
+					<div class="row text-center my-5">
+						<!--button to display correct contact info-->
+						<h2>Sur cette page tu trouveras toutes les informations utiles pour nous contacter !</h2>
+					</div>
+					<hr>
 					<div class="row align-items-center justify-content-around my-5">
-						<div class="col-6">
-							<!--map-->
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10231.906192770544!2d3.6923977!3d50.1241608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3633042ae93cd695!2sCentre%20Social%20%26%20Culturel%20Edouard%20Bantigny!5e0!3m2!1sfr!2sfr!4v1635508813538!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						<div class="col-md-6">
+							<h2>Rentre ton code postal ci-dessous pour être redirigé vers ton interlocuteur BPJ local :</h2>
+							<div class="input-group my-5">
+								<span class="input-group-text">Code postal</span>
+								<input class="form-control" type="number" placeholder="59000" max="59999" min="59000">
+							</div>
 						</div>
-						<div class="col-4">
+						<div class="col-md-4">
+							<h2>Tu peux aussi cliquer sur le nom de la commune la plus proche de chez toi.</h2>
+							<div id="boutonVille" class="my-5">
+								<a href="#mapclick" type="button" class="btn btn-primary"onclick="myFuLan()">Landrecies</a>
+								<a href="#mapclick" type="button" class="btn btn-primary" onclick="myFuAve()">Avesnes-sur-Helpe</a>
+								<a href="#mapclick" type="button" class="btn btn-primary" onclick="myFuFou()">Fourmies</a>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                <div id="mapclick">
+				<!--contact landrecies-->
+				<hr>
+				<div class="container" id="contLan">
+					<div class="row align-items-center justify-content-around my-5">
+						<div class="col-lg-6">
+							<!--map-->
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10231.906192770544!2d3.6923977!3d50.1241608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3633042ae93cd695!2sCentre%20Social%20%26%20Culturel%20Edouard%20Bantigny!5e0!3m2!1sfr!2sfr!4v1635508813538!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+						<div class="col-lg-4 my-5">
 							<h3>Contacter le centre social de Landrecies</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nec velit quis feugiat. Donec finibus rutrum ante, vel commodo augue dapibus non. Cras sed dui consectetur, molestie lorem in, ullamcorper eros. Vestibulum ultrices orci sit amet hendrerit feugiat. Mauris scelerisque id odio nec egestas. Cras et augue id nisi condimentum accumsan vitae eget nibh. Duis sed placerat neque. Vivamus consequat vulputate nunc, quis malesuada mi ultrices at. Quisque at massa ut nunc porttitor mollis dignissim vitae dolor.
@@ -102,7 +119,7 @@
 							<!--map-->
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.9765739135355!2d3.927792915890372!3d50.124160318702344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c26fe70f042571%3A0x6a611119d40946c5!2sCentre%20Social!5e0!3m2!1sfr!2sfr!4v1635508137858!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
-						<div class="col-4">
+						<div class="col-4 my-5">
 							<h3>Contacter le centre social d'Avesnes-sur-Helpe</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nec velit quis feugiat. Donec finibus rutrum ante, vel commodo augue dapibus non. Cras sed dui consectetur, molestie lorem in, ullamcorper eros. Vestibulum ultrices orci sit amet hendrerit feugiat. Mauris scelerisque id odio nec egestas. Cras et augue id nisi condimentum accumsan vitae eget nibh. Duis sed placerat neque. Vivamus consequat vulputate nunc, quis malesuada mi ultrices at. Quisque at massa ut nunc porttitor mollis dignissim vitae dolor.
@@ -117,7 +134,7 @@
 							<!--map-->
 							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10255.559152917049!2d4.0447332!3d50.0134209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc37e333fad9f7c17!2sCentre%20Socio%20Culturel%20De%20Fourmies!5e0!3m2!1sfr!2sfr!4v1635508867954!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
-						<div class="col-4">
+						<div class="col-4 my-5">
 							<h3>Contacter le centre social de Fourmies</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nec velit quis feugiat. Donec finibus rutrum ante, vel commodo augue dapibus non. Cras sed dui consectetur, molestie lorem in, ullamcorper eros. Vestibulum ultrices orci sit amet hendrerit feugiat. Mauris scelerisque id odio nec egestas. Cras et augue id nisi condimentum accumsan vitae eget nibh. Duis sed placerat neque. Vivamus consequat vulputate nunc, quis malesuada mi ultrices at. Quisque at massa ut nunc porttitor mollis dignissim vitae dolor.
@@ -125,6 +142,7 @@
 						</div>
 					</div>
 				</div>
+                    </div>
 			</section>
 		</main>
 		<!--footer-->

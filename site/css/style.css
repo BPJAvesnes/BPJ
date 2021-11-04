@@ -134,28 +134,89 @@ header
     z-index: 10;
 }
 
-.anim1 {
+#anim1 {
     width: 80px;
     z-index: 0;
     position: absolute;
     left: 0;
     bottom: 0;
-    animation: myAnim 3s linear 0s infinite normal forwards;
+    animation: Bounce 3s linear 0s infinite normal forwards;
     filter: invert(1);
 }
 
-.anim2 {
+#anim2 {
     width: 80px;
     z-index: 0;
     position: absolute;
     left: 0;
-    top: 105px;
-    animation: myAnim 3s linear 0s infinite normal forwards;
+    bottom: 0;
+    animation: Roll 4s linear 0s infinite normal forwards;
     filter: invert(1);
 }
 
 
-@keyframes myAnim {
+#anim3 {
+    width: 80px;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: BounceAlter 5s linear 0s infinite normal forwards;
+    filter: invert(1);
+}
+
+#anim4 {
+    width: 80px;
+    z-index: 0;
+    position: absolute;
+    left: 250px;
+    bottom: 0;
+    animation: Fall 2s linear 0s infinite normal forwards;
+    filter: invert(1);
+}
+
+#anim5 {
+    width: 80px;
+    z-index: 0;
+    position: absolute;
+    left: 500px;
+    bottom: 0;
+    animation: FallLeaf 3s linear 0s infinite normal forwards;
+    filter: invert(1);
+}
+
+
+@keyframes Bounce {
+  0% {
+    transform: translateX(2000px) translateY(-800px) rotate(800deg);
+  }
+    
+  50% {
+    transform: translateX(800px) translateY(0) rotate(400deg);
+  }
+
+  100% {
+    transform: translateX(-100px) translateY(-400px) rotate(0deg);
+  }
+}
+
+
+@keyframes BounceAlter {
+  0% {
+    transform: translateX(2000px) translateY(-400px) rotate(800deg);
+  }
+    
+  50% {
+    transform: translateX(1000px) translateY(0) rotate(400deg);
+  }
+
+  100% {
+    transform: translateX(-100px) translateY(-400px) rotate(0deg);
+  }
+}
+
+
+@keyframes Roll {
   0% {
     transform: translateX(2000px) rotate(800deg);
   }
@@ -166,16 +227,31 @@ header
 }
 
 
-
-@keyframes myAnim {
+@keyframes Fall {
   0% {
-    transform: translateX(2000px) rotate(800deg);
+    transform: translateY(-500px) rotate(180deg);
   }
 
   100% {
-    transform: translateX(-100px) rotate(0deg);
+    transform: translateY(100px) rotate(180deg);
   }
 }
+
+
+@keyframes FallLeaf {
+  0% {
+    transform: translateX(800px)  translateY(-500px) rotate(180deg);
+  }
+
+  50% {
+    transform: translateX(400px)  translateY(-200px) rotate(180deg);
+  }
+
+  100% {
+    transform: translateX(800px)  translateY(100px) rotate(180deg);
+  }
+}
+
 
 
 
@@ -488,6 +564,9 @@ footer a
 	transition: 0.8s;
 }
 
+#boutonVille {
+    
+}
 
 
 /*------------------------------------------------------------------------actus------------------------------------------------------------------------*/
