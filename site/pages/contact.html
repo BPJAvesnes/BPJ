@@ -43,6 +43,7 @@
 			<!--header-->
 			<header class="container">
                 <img class="anim1" src="../img/anim1.svg">
+                <img class="anim2" src="../img/anim2.svg">
 				<div class="row align-items-end">
 					<div class="col-lg-3 d-none d-lg-block upani" id="imgle">
 						<img src="../img/femme_pensante.png" alt="image femme" width="250px">
@@ -62,15 +63,25 @@
 					</div>
 				</div>
 			</header>
-			<hr>
+                <div class="container entete">
+                    <h2>Contact</h2>
+                </div>
 			<section>
-				<!--button to display correct contact info-->
-				<h2>Clique sur le nom de la commune la plus proche de toi :</h2>
-				<button type="button" class="btn btn-primary" onclick="myFuLan()">Landrecies</button>
-				<button type="button" class="btn btn-primary" onclick="myFuAve()">Avesnes-sur-Helpe</button>
-				<button type="button" class="btn btn-primary" onclick="myFuFou()">Fourmies</button>
+                <div class="container">
+                    <div class="row text-center my-5">
+                        <!--button to display correct contact info-->
+                        <h2>Sur cette page tu trouveras toutes les informations utiles pour nous contacter !</h2>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary"   onclick="myFuLan()">Landrecies</button>
+                                <button type="button" class="btn btn-primary" onclick="myFuAve()">Avesnes-sur-Helpe</button>
+                                <button type="button" class="btn btn-primary" onclick="myFuFou()">Fourmies</button>
+                            </div>
+                    </div>
+                </div>
+				
 				<!--contact landrecies-->
 				<div class="container" id="contLan">
+                    
 					<div class="row align-items-center justify-content-around my-5">
 						<div class="col-6">
 							<!--map-->

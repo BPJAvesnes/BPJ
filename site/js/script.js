@@ -23,7 +23,7 @@ function myFuLan() {
 				  var y = document.getElementById("contAve");
 				  var z = document.getElementById("contFou");
 				  if (x.style.display === "block") {
-					x.style.display = "none";
+					x.style.display = "block";
 					y.style.display = "none";
 					z.style.display = "none";
 					  
@@ -41,7 +41,7 @@ function myFuLan() {
 				  var y = document.getElementById("contLan");
 				  var z = document.getElementById("contFou");
 				  if (x.style.display === "block") {
-					x.style.display = "none";
+					x.style.display = "block";
 					y.style.display = "none";
 					z.style.display = "none";
 					  
@@ -59,7 +59,7 @@ function myFuLan() {
 				  var y = document.getElementById("contLan");
 				  var z = document.getElementById("contAve");
 				  if (x.style.display === "block") {
-					x.style.display = "none";
+					x.style.display = "block";
 					y.style.display = "none";
 					z.style.display = "none";
 					  
