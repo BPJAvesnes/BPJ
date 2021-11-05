@@ -23,6 +23,19 @@ main
 	margin: auto;
 }
 
+h4 {
+    background-color: #fcc848;
+    padding: 10px;
+    color: #2c3f60;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.maintext {
+    font-size: 1.3em;
+}
+
 /*navbar*/
 #mainnav
 {
@@ -134,54 +147,71 @@ header
     z-index: 10;
 }
 
+[id^="anim"] {
+    width: 4vw;
+}
+
 #anim1 {
-    width: 80px;
     z-index: 0;
     position: absolute;
     left: 0;
     bottom: 0;
-    animation: Bounce 3s linear 0s infinite normal forwards;
+    animation: Roll 3s linear 0s infinite normal forwards;
     filter: invert(1);
 }
 
 #anim2 {
-    width: 80px;
     z-index: 0;
     position: absolute;
     left: 0;
     bottom: 0;
-    animation: Roll 4s linear 0s infinite normal forwards;
+    animation: Roll 5s linear 0s infinite normal forwards;
     filter: invert(1);
 }
 
 
 #anim3 {
-    width: 80px;
     z-index: 0;
     position: absolute;
-    left: 0;
+    right: 200px;
     bottom: 0;
-    animation: BounceAlter 5s linear 0s infinite normal forwards;
+    animation: Fall 5s linear 0s infinite normal forwards;
     filter: invert(1);
 }
 
 #anim4 {
-    width: 80px;
     z-index: 0;
     position: absolute;
     left: 250px;
     bottom: 0;
-    animation: Fall 2s linear 0s infinite normal forwards;
+    animation: FallLeaf 3s linear 0s infinite normal forwards;
     filter: invert(1);
 }
 
 #anim5 {
-    width: 80px;
     z-index: 0;
     position: absolute;
     left: 500px;
     bottom: 0;
-    animation: FallLeaf 3s linear 0s infinite normal forwards;
+    animation: Fall 3s linear 0s infinite normal forwards;
+    filter: invert(1);
+}
+
+#anim6 {
+    z-index: 0;
+    position: absolute;
+    left: 500px;
+    bottom: 0;
+    animation: BounceAlter 4s linear 0s infinite normal forwards;
+    filter: invert(1);
+}
+
+#anim7 {
+    z-index: 0;
+    position: absolute;
+    left: 500px;
+    bottom: 0;
+    animation: Bounce 4s linear 0s infinite normal forwards;
     filter: invert(1);
 }
 
@@ -192,11 +222,11 @@ header
   }
     
   50% {
-    transform: translateX(800px) translateY(0) rotate(400deg);
+    transform: translateX(500px) translateY(0) rotate(400deg);
   }
 
   100% {
-    transform: translateX(-100px) translateY(-400px) rotate(0deg);
+    transform: translateX(-300px) translateY(-400px) rotate(0deg);
   }
 }
 
@@ -211,7 +241,7 @@ header
   }
 
   100% {
-    transform: translateX(-100px) translateY(-400px) rotate(0deg);
+    transform: translateX(-100px) translateY(-800px) rotate(0deg);
   }
 }
 
