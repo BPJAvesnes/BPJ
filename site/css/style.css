@@ -191,7 +191,7 @@ header
 #anim5 {
     z-index: 0;
     position: absolute;
-    left: 500px;
+    left: 250px;
     bottom: 0;
     animation: Fall 3s linear 0s infinite normal forwards;
     filter: invert(1);
