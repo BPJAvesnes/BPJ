@@ -38,9 +38,9 @@
 				</div>
 			</div>
 		</nav>
-		<main>
-			<!--header-->
-			<header class="container">
+        <!--header-->
+			<header>
+                <div  class="container">
 				<img id="anim1" src="../img/anim1.svg">
 				<img id="anim2" src="../img/anim2.svg">
 				<img id="anim3" src="../img/anim3.svg">
@@ -66,7 +66,10 @@
 						<img src="../img/homme_souriant.png" alt="image homme" width="250px">
 					</div>
 				</div>
+                </div>
 			</header>
+		<main>
+			
 			<div class="container entete">
 				<h2>Contact</h2>
 			</div>
@@ -80,10 +83,14 @@
 					<div class="row align-items-center justify-content-around my-5">
 						<div class="col-md-6">
 							<h3>Rentre ton code postal ci-dessous pour être redirigé vers ton interlocuteur BPJ local :</h3>
-							<div class="input-group my-5 w-50 mx-auto">
+							<div class="input-group my-5 w-50">
 								<span class="input-group-text">Code postal</span>
-								<input class="form-control" type="number" placeholder="59000" max="59999" min="59000">
+								<input id="zipCode" class="form-control" type="number" placeholder="59000" max="59999" min="59000" minlength="5" maxlength="5" required pattern="59.">
+                                <button type="button" id="zipSubmit" class="btn btn-primary" title="click to submit your zipcode" onclick="zipVerify();">Valider</button>
 							</div>
+                            <div id="zipResult">
+                                La commune possédant le code postal rentré n'est pas élligible à la BPJ.
+                            </div>
 						</div>
 						<div class="col-md-4">
 							<h3>Tu peux aussi cliquer sur le nom de la commune la plus proche de chez toi.</h3>

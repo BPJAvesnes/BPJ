@@ -82,7 +82,7 @@ header
 
 #logodisplay
 {
-	color: #6e53a4;
+	color: #2c3f60;
 	background-color: #fff;
 	border-radius: 100px;
 	text-align: center;
@@ -104,8 +104,8 @@ header
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 1.5em;
-	width: 100%;
-	bottom: 20px;
+	width: 120%;
+	bottom: 50px;
 	left: 0;
 	-ms-transform: rotate(-3deg);
 	/* IE 9 */
