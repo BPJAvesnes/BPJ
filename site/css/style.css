@@ -72,9 +72,7 @@ h4 {
 header
 {
 	padding-top: 120px;
-	background-color: #ffffff;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%236E53A4'/%3E%3Cstop offset='1' stop-color='%23FCC848'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='3.5' cy='3.5' r='3.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.3'/%3E%3C/svg%3E");
-	background-attachment: fixed;
+    background-image: url("../img/header-fond.svg");
 	/* background by SVGBackgrounds.com */
     overflow: hidden;
     position: relative;
@@ -84,12 +82,11 @@ header
 {
 	color: #2c3f60;
 	background-color: #fff;
-	border-radius: 100px;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
 	z-index: 0;
-	margin: auto;
+    border-radius: 150px;
 }
 
 #logodisplay h1
@@ -104,13 +101,11 @@ header
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 1.5em;
-	width: 120%;
-	bottom: 50px;
+	width: 100%;
+	bottom: 0;
 	left: 0;
-	-ms-transform: rotate(-3deg);
-	/* IE 9 */
-	transform: rotate(-3deg);
 }
+
 
 #imgri
 {
