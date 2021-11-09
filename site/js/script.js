@@ -74,24 +74,29 @@ function myFuLan() {
 
 /* zipcode search*/
 
-let zipLan = [481,006,031,053,057,065,070,077,099,116,164,194,217,223,232,242,246,251,259,265,277,283,296,310,315,323,325,331,353,357,363,381,384,396,425,441,451,464,468,472,473,494,503,518,548,549,565,584,607,619,626,639,640];
+let zipLan = ['LE QUESNOY','AMFROIPRET','AUDIGNIES','BAVAY','BEAUDIGNIES','BELLIGNIES','BERMERIES','BETTRECHIES','BOUSIES','BRY','CROIX CALUYAU','ENGLEFONTAINE','ETH','LE FAVRIL','LA FLAMENGRIE','FONTAINE AU BOIS','FOREST EN CAMBRESIS','FRASNOY','GHISSIGNIES','GOMMEGNIES','GUSSIGNIES','HARGNIES','HECQ','HON HERGIES','HOUDAIN LEZ BAVAY','JENLAIN','JOLIMETZ','LANDRECIES','LOCQUIGNOL','LA LONGUEVILLE','LOUVIGNIES QUESNOY','MARESCHES','MAROILLES','MECQUIGNIES','NEUVILLE EN AVESNOIS','OBIES','ORSINVAL','POIX DU NORD','POTELLE','PREUX AU BOIS','PREUX AU SART','RAUCOURT AU BOIS','ROBERSART','RUESNES','SAINT WAAST','SALESCHES','SEPMERIES','TAISNIERES SUR HON','VENDEGIES AU BOIS','VILLEREAU','VILLERS POL','WARGNIES LE GRAND','WARGNIES LE PETIT'];
 let lenLan = zipLan.length;
 
-let zipAve = [036,035,050,061,062,066,078,093,134,147,148,169,174,175,177,181,186,218,226,233,240,241,270,290,306,333,342,347,374,461,474,490,493,525,529,534,555,562,563,572,573,583,649];
+let zipAve = ['AVESNES SUR HELPE','AVESNELLES','BAS LIEU','BEAUREPAIRE SUR SAMBRE','BEAURIEUX','BERELLES','BEUGNIES','BOULOGNE SUR HELPE','CARTIGNIES','CHOISIES','CLAIRFAYTS','DAMOUSIES','DIMECHAUX','DIMONT','DOMPIERRE SUR HELPE','DOURLERS','ECCLES','ETROEUNGT','FELLERIES','FLAUMONT WAUDRECHIES','FLOURSIES','FLOYON','GRAND FAYT','HAUT LIEU','HESTRUD','LAROUILLIES','LEZ FONTAINE','LIESSIES','MARBAIX','PETIT FAYT','PRISCHES','RAINSARS','RAMOUSIES','SAINS DU NORD','SAINT AUBIN','SAINT HILAIRE SUR HELPE','SARS POTERIES','SEMERIES','SEMOUSIES','SOLRE LE CHATEAU','SOLRINNES','TAISNIERES EN THIERACHE','WATTIGNIES LA VICTOIRE'];
 let lenAve = zipAve.length;
 
-let zipFou = [249,012,045,198,229,261,420,445,601,633,659,661];
+let zipFou = ['FOURMIES','ANOR','BAIVES','EPPE SAUVAGE','FERON','GLAGEON','MOUSTIER EN FAGNE','OHAIN','TRELON','WALLERS EN FAGNE','WIGNEHIES','WILLIES'];
 let lenFou = zipFou.length;
 
 function zipVerify() {
     let x = document.getElementById("zipCode").value;
+    let y = document.getElementById("zipVille").value;
+    let z = y.toUpperCase();
     if ( x >= 59000 && x <= 59999) {
-        if (zipLan.includes(x - 59000)) {
-            document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de Commune du Pays de Mormal, veuillez vous rapprocher du Centre Social et Culturel de Landrecies.");
-        } else if (zipAve.includes(x - 59000)){
+        if (zipLan.includes(z)) {
+            document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de Communes du Pays de Mormal, veuillez vous rapprocher du Centre Social et Culturel de Landrecies.");
+            myFuLan();
+        } else if (zipAve.includes(z)){
             document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes Cœur de l'Avesnois, veuillez vous rapprocher du Centre Social et Culturel d'Avesnes-sur-Helpe.");
-            } else if (zipFou.includes(x - 59000)) {
+            myFuAve();
+            } else if (zipFou.includes(z)) {
             document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes du Sud Avesnois, veuillez vous rapprocher du Centre Social et Culturel de Fourmies.");
+                myFuFou();
                 } else {
                     document.getElementById("zipResult").innerHTML =  ("Votre commune n'est pas rattachée aux communautés de communes proposant la BPJ");
             }

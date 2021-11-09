@@ -84,24 +84,24 @@
 						<div class="col-md-6">
 							<h3>Rentre ton code postal ou ta ville ci-dessous pour être redirigé vers ton interlocuteur BPJ local :</h3>
 							
-                                <form>
+                                <form id="zipForm">
 								<div class="input-group my-2">
                                     <span class="input-group-text w-25">Code postal</span>
                                     <input id="zipCode" class="form-control" type="number" placeholder="59000" max="59999" min="59000">
                                 </div>
-                                    <ul class="list-group">
+								<div class="input-group my-2">
+                                    <span class="input-group-text w-25">Ville</span>
+                                    <input id="zipVille" class="form-control" type="text" placeholder="Ville">
+                                </div>
+                                    <ul class="list-group" id="zipList">
                                     <li class="list-group-item" data-vicopo="#zipVille,#zipCode" data-vicopo-click='{"#zipCode": "code", "#zipVille": "ville"}'>
                                      <strong data-vicopo-code-postal></strong> 
                                         <span data-vicopo-ville></span>
                                     </li>
                                     </ul>
-								<div class="input-group my-2">
-                                    <span class="input-group-text w-25">Ville</span>
-                                    <input id="zipVille" class="form-control" type="text" placeholder="Ville">
-                                </div>
                                 <button type="button" id="zipSubmit" class="btn btn-primary" title="click to submit your zipcode" onclick="zipVerify();">Valider</button>
                                     </form>
-                            <div id="zipResult"> 
+                            <div id="zipResult" class="mt-4"> 
                             </div>
 						</div>
 						<div class="col-md-4">

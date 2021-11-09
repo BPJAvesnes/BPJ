@@ -593,6 +593,21 @@ footer a
     
 }
 
+#zipForm {
+    position: relative;
+}
+
+#zipList {
+    position: absolute;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#zipList li:hover{
+    background-color: #2c3f60;
+    color: #fff;
+}
+
 
 /*------------------------------------------------------------------------actus------------------------------------------------------------------------*/
 
@@ -609,9 +624,6 @@ footer a
 .cardcolor {
     color: #2c3f60;
 }
-
-
-
 
 
 
