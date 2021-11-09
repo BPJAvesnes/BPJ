@@ -87,11 +87,11 @@ function zipVerify() {
     let x = document.getElementById("zipCode").value;
     if ( x >= 59000 && x <= 59999) {
         if (zipLan.includes(x - 59000)) {
-            document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de Commune du Pays de Mormal, veuillez vous rapprocher du Centre Social et Culturel de Landrecies");
+            document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de Commune du Pays de Mormal, veuillez vous rapprocher du Centre Social et Culturel de Landrecies.");
         } else if (zipAve.includes(x - 59000)){
-            document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes Cœur de l'Avesnois, veuillez vous rapprocher du Centre Social et Culturel d'Avesnes-sur-Helpe");
+            document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes Cœur de l'Avesnois, veuillez vous rapprocher du Centre Social et Culturel d'Avesnes-sur-Helpe.");
             } else if (zipFou.includes(x - 59000)) {
-            document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes du Sud Avesnois, veuillez vous rapprocher du Centre Social et Culturel de Fourmies");
+            document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes du Sud Avesnois, veuillez vous rapprocher du Centre Social et Culturel de Fourmies.");
                 } else {
                     document.getElementById("zipResult").innerHTML =  ("Votre commune n'est pas rattachée aux communautés de communes proposant la BPJ");
             }
