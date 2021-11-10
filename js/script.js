@@ -62,7 +62,7 @@ function zipVerify() {
                     tab3.show();
                 scroll.scrollIntoView();
                 } else {
-                    document.getElementById("zipResult").innerHTML =  ("Votre commune n'est pas rattachée aux communautés de communes proposant la BPJ");
+                    document.getElementById("zipResult").innerHTML =  ("Votre commune n'est pas rattachée aux communautés de communes proposant cette BPJ");
             }
             
     } else {
