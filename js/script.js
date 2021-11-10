@@ -1,6 +1,7 @@
 /*multi-item carousel on gallery page*/
 
-let items = document.querySelectorAll('[id^="recipeCarousel"] .carousel-item')
+
+let items = document.querySelectorAll('[id^="recipeCarousel"] .carousel-item');
 
 items.forEach((el) => {
         const minPerSlide = 4

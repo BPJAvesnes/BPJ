@@ -87,10 +87,13 @@ header
 	overflow: hidden;
 	z-index: 0;
     border-radius: 150px;
+    max-width: 600px;
+    margin: auto auto 15px auto;
 }
 
 #logodisplay h1
 {
+    text-align: center;
 	font-size: 15em;
 }
 
@@ -443,8 +446,8 @@ footer a
 /*-------------------------------------------------------------------------------Galerie-------------------------------------------------------------------------------*/
 .prointro
 {
-	background-color: #6e53a4;
-	color: #fff;
+	background-color: #fff;
+	color: #2c3f60;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	padding: 20px;
@@ -485,6 +488,13 @@ footer a
 	width: 100%;
 	text-align: center;
 	font-weight: bold;
+}
+
+.galSec {
+    margin-top: 100px;
+    margin-bottom: 100px; 
+    height: 500px;
+    background-color: #2c3f60;
 }
 
 .galhover:hover div
@@ -626,7 +636,9 @@ footer a
     color: #2c3f60;
 }
 
-
+.cardStyle {
+     width: 25rem;
+}
 
 
 
