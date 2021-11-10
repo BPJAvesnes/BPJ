@@ -19,13 +19,13 @@ items.forEach((el) => {
 
 /*contact tabs access*/
 
-var tabLanTrigger = document.querySelector('#nav-Lan-tab'),
+var tabLanTrigger = document.querySelector('#nav-Lan-tab');
 var tab1 = new bootstrap.Tab(tabLanTrigger);
 
-var tabAveTrigger = document.querySelector('#nav-Ave-tab'),
+var tabAveTrigger = document.querySelector('#nav-Ave-tab');
 var tab2 = new bootstrap.Tab(tabAveTrigger);
 
-var tabFouTrigger = document.querySelector('#nav-Fou-tab'),
+var tabFouTrigger = document.querySelector('#nav-Fou-tab');
 var tab3 = new bootstrap.Tab(tabFouTrigger);
 
 
