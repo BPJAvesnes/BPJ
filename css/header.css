@@ -1,0 +1,281 @@
+
+#mainnav
+{
+	background-color: #2c3f60;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+
+#navbar
+{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/*navbar hovering*/
+#navbar li:hover
+{
+	background-color: #fff;
+	transition: 0.7s;
+}
+
+#navbar li:hover a
+{
+	color: #2c3f60;
+}
+
+#navbar li:hover
+{
+	color: #2c3f60;
+}
+
+/*header*/
+header
+{
+	padding-top: 120px;
+	background-image: url("../img/header-fond.svg");
+	/* background by SVGBackgrounds.com */
+	overflow: hidden;
+	position: relative;
+}
+
+#logodisplay
+{
+	color: #2c3f60;
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	border-radius: 150px;
+	max-width: 600px;
+	margin: auto auto 15px auto;
+}
+
+#logodisplay h1
+{
+	text-align: center;
+	font-size: 15em;
+}
+
+#logodisplay p
+{
+	background-color: #fcc848;
+	position: absolute;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5em;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+#imgri
+{
+	text-align: right;
+}
+
+#imgle
+{
+	text-align: left;
+}
+
+.entete
+{
+	background-color: #2c3f60;
+	height: 100px;
+	margin-top: 50px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.entete h2
+{
+	letter-spacing: 5px;
+	font-size: 3em;
+	font-family: 'Finger Paint', cursive;
+	font-weight: bold;
+}
+
+/*animation*/
+.upani
+{
+	z-index: 10;
+}
+
+[id^="anim"]
+{
+	width: 4vw;
+}
+
+#anim1
+{
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	animation: Roll 3s linear 0s infinite normal forwards;
+	filter: invert(1);
+}
+
+#anim2
+{
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	animation: Roll 5s linear 0s infinite normal forwards;
+	filter: invert(1);
+}
+
+#anim3
+{
+	z-index: 0;
+	position: absolute;
+	right: 200px;
+	bottom: 0;
+	animation: Fall 5s linear 0s infinite normal forwards;
+	filter: invert(1);
+}
+
+#anim4
+{
+	z-index: 0;
+	position: absolute;
+	left: 250px;
+	bottom: 0;
+	animation: FallLeaf 3s linear 0s infinite normal forwards;
+	filter: invert(1);
+}
+
+#anim5
+{
+	z-index: 0;
+	position: absolute;
+	left: 250px;
+	bottom: 0;
+	animation: Fall 3s linear 0s infinite normal forwards;
+	filter: invert(1);
+}
+
+#anim6
+{
+	z-index: 0;
+	position: absolute;
+	left: 500px;
+	bottom: 0;
+	animation: BounceAlter 4s linear 0s infinite normal forwards;
+	filter: invert(1);
+}
+
+#anim7
+{
+	z-index: 0;
+	position: absolute;
+	left: 500px;
+	bottom: 0;
+	animation: Bounce 4s linear 0s infinite normal forwards;
+	filter: invert(1);
+}
+
+@keyframes Bounce
+{
+	0%
+	{
+		transform: translateX(2000px) translateY(-800px) rotate(800deg);
+	}
+
+	50%
+	{
+		transform: translateX(500px) translateY(0) rotate(400deg);
+	}
+
+	100%
+	{
+		transform: translateX(-300px) translateY(-400px) rotate(0deg);
+	}
+}
+
+@keyframes BounceAlter
+{
+	0%
+	{
+		transform: translateX(2000px) translateY(-400px) rotate(800deg);
+	}
+
+	50%
+	{
+		transform: translateX(1000px) translateY(0) rotate(400deg);
+	}
+
+	100%
+	{
+		transform: translateX(-100px) translateY(-800px) rotate(0deg);
+	}
+}
+
+@keyframes Roll
+{
+	0%
+	{
+		transform: translateX(2000px) rotate(800deg);
+	}
+
+	100%
+	{
+		transform: translateX(-100px) rotate(0deg);
+	}
+}
+
+@keyframes Fall
+{
+	0%
+	{
+		transform: translateY(-500px) rotate(180deg);
+	}
+
+	100%
+	{
+		transform: translateY(100px) rotate(180deg);
+	}
+}
+
+@keyframes FallLeaf
+{
+	0%
+	{
+		transform: translateX(800px)  translateY(-500px) rotate(180deg);
+	}
+
+	50%
+	{
+		transform: translateX(400px)  translateY(-200px) rotate(180deg);
+	}
+
+	100%
+	{
+		transform: translateX(800px)  translateY(100px) rotate(180deg);
+	}
+}
+
+/*main*/
+section
+{
+	font-family: 'Montserrat', cursive;
+}
+
+/*hr*/
+hr
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/*sponsors logos*/
+#logos img
+{
+	width: 60%;
+}

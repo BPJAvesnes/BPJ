@@ -1,0 +1,90 @@
+footer
+{
+	background-color: #121212;
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	min-height: 50px;
+	margin-top: 50px;
+	padding: 20px;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: auto;
+}
+
+#footflex
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#socials div
+{
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+#socials a
+{
+	text-align: left;
+}
+
+.svgfill
+{
+	filter: invert(1);
+}
+
+#ftree div
+{
+	display: inline-block;
+	margin: auto 20px;
+	text-align: end;
+	padding: 5px;
+}
+
+/*footer hovering*/
+#ftree div:hover
+{
+	background-color: #fff;
+	border-radius: 5px;
+	transition: 0.8s;
+}
+
+#ftree div:hover a
+{
+	color: #121212;
+	transition: 0.8s;
+}
+
+#ftree div:hover .svgfill
+{
+	filter: invert(0);
+	transition: 0.8s;
+}
+
+#socials div:hover
+{
+	background-color: #fff;
+	border-radius: 5px;
+	transition: 0.8s;
+}
+
+#socials div:hover a
+{
+	color: #121212;
+	transition: 0.8s;
+}
+
+#socials div:hover .svgfill
+{
+	filter: invert(0);
+	transition: 0.8s;
+}

@@ -1,0 +1,22 @@
+#buttco
+{
+	border: solid 1px #2c3f60;
+	color: #2c3f60;
+}
+
+#buttco:hover
+{
+	background-color: #2c3f60;
+	color: #fff;
+}
+
+.cardcolor
+{
+	color: #2c3f60;
+}
+
+.cardStyle
+{
+	width: 25rem;
+	margin: auto auto 25px auto;
+}

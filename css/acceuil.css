@@ -1,0 +1,35 @@
+/*html*/
+h1
+{
+	font-family: 'Finger Paint', cursive;
+}
+
+body
+{
+	background-image: url("../img/pattern-randomized.svg");
+	background-attachment: fixed;
+	background-size: cover;
+	/* background by SVGBackgrounds.com */
+}
+
+main
+{
+	background-color: #fff;
+	width: 80%;
+	margin: auto;
+}
+
+h4
+{
+	background-color: #fcc848;
+	padding: 10px;
+	color: #2c3f60;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 4px;
+}
+
+.maintext
+{
+	font-size: 1.3em;
+}

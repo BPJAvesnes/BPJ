@@ -2,11 +2,13 @@
 
 [] changer l'actualité en mettant les différent réseau des structure
 
-[] refair le fichier règlement pour le mettre en plus propre
+kylian : [] refair le fichier règlement pour le mettre en plus propre
 
 [] galerie mettre des vrais image et vrais projet
 
 
 [] le footer notre page facebook / Youtube, soit à virer soit à mettre des vrais liens
 
-[] header mettre les liens en target="\_blank"
+tom : [x] header mettre les liens en target="\_blank"
+
+tom : [] organiser CSS

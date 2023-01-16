@@ -4,16 +4,18 @@
 let items = document.querySelectorAll('[id^="recipeCarousel"] .carousel-item');
 
 items.forEach((el) => {
-        const minPerSlide = 4
-        let next = el.nextElementSibling
-         for (var i=1; i<minPerSlide; i++) {
-                    if (!next) {
-                        // wrap carousel by using first child
-        	           next = items[0]
-      	         }
-                    let cloneChild = next.cloneNode(true)
-                    el.appendChild(cloneChild.children[0])
-                    next = next.nextElementSibling
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+        for (var i=1; i<minPerSlide; i++)
+        {
+            if (!next)
+            {
+                // wrap carousel by using first child
+                next = items[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
         }
 });
 
@@ -54,22 +56,18 @@ function zipVerify() {
             tab1.show();
             scroll.scrollIntoView();
         } else if (zipAve.includes(z)){
-                document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes Cœur de l'Avesnois, veuillez vous rapprocher du Centre Social et Culturel d'Avesnes-sur-Helpe.");      
+                document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes Cœur de l'Avesnois, veuillez vous rapprocher du Centre Social et Culturel d'Avesnes-sur-Helpe.");
                 tab2.show();
             scroll.scrollIntoView();
             } else if (zipFou.includes(z)) {
-                    document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes du Sud Avesnois, veuillez vous rapprocher du Centre Social et Culturel de Fourmies.");        
+                    document.getElementById("zipResult").innerHTML = ("Vous êtes rattaché à la Communauté de communes du Sud Avesnois, veuillez vous rapprocher du Centre Social et Culturel de Fourmies.");
                     tab3.show();
                 scroll.scrollIntoView();
                 } else {
                     document.getElementById("zipResult").innerHTML =  ("Votre commune n'est pas rattachée aux communautés de communes proposant cette BPJ");
             }
-            
+
     } else {
         document.getElementById("zipResult").innerHTML =  ("Le code postal rentré n'est pas situé dans le nord, redirigez vous vers la BPJ la plus proche de chez vous");
     }
 }
-
-
-
-
