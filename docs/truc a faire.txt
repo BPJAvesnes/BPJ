@@ -1,0 +1,12 @@
+[] Accueil changé la vidéo mettre un de M. Frappat
+
+[] changer l'actualité en mettant les différent réseau des structure
+
+[] refair le fichier règlement pour le mettre en plus propre
+
+[] galerie mettre des vrais image et vrais projet
+
+
+[] le footer notre page facebook / Youtube, soit à virer soit à mettre des vrais liens
+
+[] header mettre les liens en target="\_blank"
