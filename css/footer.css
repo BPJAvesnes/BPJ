@@ -1,5 +1,4 @@
-footer
-{
+footer {
 	background-color: #121212;
 	width: 100%;
 	color: #fff;
@@ -10,8 +9,7 @@ footer
 	padding: 20px;
 }
 
-footer a
-{
+footer a {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
@@ -19,31 +17,26 @@ footer a
 	margin: auto;
 }
 
-#footflex
-{
+#footflex {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 
-#socials div
-{
+#socials div {
 	margin-bottom: 5px;
 	padding: 5px;
 }
 
-#socials a
-{
+#socials a {
 	text-align: left;
 }
 
-.svgfill
-{
+.svgfill {
 	filter: invert(1);
 }
 
-#ftree div
-{
+#ftree div {
 	display: inline-block;
 	margin: auto 20px;
 	text-align: end;
@@ -51,40 +44,34 @@ footer a
 }
 
 /*footer hovering*/
-#ftree div:hover
-{
+#ftree div:hover {
 	background-color: #fff;
 	border-radius: 5px;
 	transition: 0.8s;
 }
 
-#ftree div:hover a
-{
+#ftree div:hover a {
 	color: #121212;
 	transition: 0.8s;
 }
 
-#ftree div:hover .svgfill
-{
+#ftree div:hover .svgfill {
 	filter: invert(0);
 	transition: 0.8s;
 }
 
-#socials div:hover
-{
+#socials div:hover {
 	background-color: #fff;
 	border-radius: 5px;
 	transition: 0.8s;
 }
 
-#socials div:hover a
-{
+#socials div:hover a {
 	color: #121212;
 	transition: 0.8s;
 }
 
-#socials div:hover .svgfill
-{
+#socials div:hover .svgfill {
 	filter: invert(0);
 	transition: 0.8s;
 }

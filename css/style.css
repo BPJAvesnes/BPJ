@@ -6,21 +6,19 @@
 @import './galerie.css';
 
 /* multiple item carousel */
-[id^="recipeCarousel"] .card-img-overlay
-{
+[id^="recipeCarousel"] .card-img-overlay {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
 	height: 0;
 	transition: 0.5s ease-out;
 	z-index: -1;
 }
 
-[id^="recipeCarousel"] .card-img-overlay span
-{
+[id^="recipeCarousel"] .card-img-overlay span {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -31,93 +29,87 @@
 	font-weight: bold;
 }
 
-[id^="recipeCarousel"] .card:hover .card-img-overlay
-{
+[id^="recipeCarousel"] .card:hover .card-img-overlay {
 	height: 100%;
 	z-index: 1;
 	transition: 0.8;
 }
 
-@media (max-width: 767px)
-{
-	#multicarou .carousel-inner .carousel-item > div
-	{
+@media (max-width: 767px) {
+	#multicarou .carousel-inner .carousel-item>div {
 		display: none;
 	}
 
-	#multicarou .carousel-inner .carousel-item > div:first-child
-	{
+	#multicarou .carousel-inner .carousel-item>div:first-child {
 		display: block;
 	}
 }
 
-#multicarou .carousel-inner .carousel-item.active,#multicarou .carousel-inner .carousel-item-next,#multicarou .carousel-inner .carousel-item-prev
-{
+#multicarou .carousel-inner .carousel-item.active,
+#multicarou .carousel-inner .carousel-item-next,
+#multicarou .carousel-inner .carousel-item-prev {
 	display: flex;
 }
 
-@media (min-width: 768px)
-{
-	#multicarou .carousel-inner .carousel-item-end.active,#multicarou .carousel-inner .carousel-item-next
-	{
+@media (min-width: 768px) {
+
+	#multicarou .carousel-inner .carousel-item-end.active,
+	#multicarou .carousel-inner .carousel-item-next {
 		transform: translateX(25%);
 	}
 
-	#multicarou .carousel-inner .carousel-item-start.active,#multicarou .carousel-inner .carousel-item-prev
-	{
+	#multicarou .carousel-inner .carousel-item-start.active,
+	#multicarou .carousel-inner .carousel-item-prev {
 		transform: translateX(-25%);
 	}
 }
 
-#multicarou .carousel-inner .carousel-item-end,#multicarou .carousel-inner .carousel-item-start
-{
+#multicarou .carousel-inner .carousel-item-end,
+#multicarou .carousel-inner .carousel-item-start {
 	transform: translateX(0);
 }
 
 
-@media screen and (max-width: 1250px)/*xl breakpoint*/
+@media screen and (max-width: 1250px)
+/*xl breakpoint*/
 
-{
-	/*header*/
-	#imgle img, #imgri img
 	{
+
+	/*header*/
+	#imgle img,
+	#imgri img {
 		width: 90%;
 	}
 
-	#logodisplay h1
-	{
+	#logodisplay h1 {
 		font-size: 10em;
 	}
 
-	#logodisplay p
-	{
+	#logodisplay p {
 		font-size: 1em;
 	}
 }
 
-@media screen and (max-width: 992px)/*lg breakpoint*/
+/*lg breakpoint*/
+@media screen and (max-width: 992px) {
 
-{
 	/*sponsors logos*/
-	#logos img
-	{
+	#logos img {
 		width: 80%;
 	}
 
 	/*footer*/
-	#ftree
-	{
+	#ftree {
 		display: flex;
 		flex-direction: column;
 	}
 
-	#ftree, #socials
-	{
+	#ftree,
+	#socials {
 		font-size: 0.8em;
 	}
 
-	#ftree div
-	{
+	#ftree div {
 		text-align: start;
 	}
 }

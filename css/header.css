@@ -1,38 +1,31 @@
-
-#mainnav
-{
+#mainnav {
 	background-color: #2c3f60;
 	position: fixed;
 	width: 100%;
 	z-index: 99;
 }
 
-#navbar
-{
+#navbar {
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 /*navbar hovering*/
-#navbar li:hover
-{
+#navbar li:hover {
 	background-color: #fff;
 	transition: 0.7s;
 }
 
-#navbar li:hover a
-{
+#navbar li:hover a {
 	color: #2c3f60;
 }
 
-#navbar li:hover
-{
+#navbar li:hover {
 	color: #2c3f60;
 }
 
 /*header*/
-header
-{
+header {
 	padding-top: 120px;
 	background-image: url("../img/header-fond.svg");
 	/* background by SVGBackgrounds.com */
@@ -40,8 +33,7 @@ header
 	position: relative;
 }
 
-#logodisplay
-{
+#logodisplay {
 	color: #2c3f60;
 	background-color: #fff;
 	text-align: center;
@@ -53,14 +45,12 @@ header
 	margin: auto auto 15px auto;
 }
 
-#logodisplay h1
-{
+#logodisplay h1 {
 	text-align: center;
 	font-size: 15em;
 }
 
-#logodisplay p
-{
+#logodisplay p {
 	background-color: #fcc848;
 	position: absolute;
 	text-transform: uppercase;
@@ -71,18 +61,15 @@ header
 	left: 0;
 }
 
-#imgri
-{
+#imgri {
 	text-align: right;
 }
 
-#imgle
-{
+#imgle {
 	text-align: left;
 }
 
-.entete
-{
+.entete {
 	background-color: #2c3f60;
 	height: 100px;
 	margin-top: 50px;
@@ -92,8 +79,7 @@ header
 	text-transform: uppercase;
 }
 
-.entete h2
-{
+.entete h2 {
 	letter-spacing: 5px;
 	font-size: 3em;
 	font-family: 'Finger Paint', cursive;
@@ -101,18 +87,15 @@ header
 }
 
 /*animation*/
-.upani
-{
+.upani {
 	z-index: 10;
 }
 
-[id^="anim"]
-{
+[id^="anim"] {
 	width: 4vw;
 }
 
-#anim1
-{
+#anim1 {
 	z-index: 0;
 	position: absolute;
 	left: 0;
@@ -121,8 +104,7 @@ header
 	filter: invert(1);
 }
 
-#anim2
-{
+#anim2 {
 	z-index: 0;
 	position: absolute;
 	left: 0;
@@ -131,8 +113,7 @@ header
 	filter: invert(1);
 }
 
-#anim3
-{
+#anim3 {
 	z-index: 0;
 	position: absolute;
 	right: 200px;
@@ -141,8 +122,7 @@ header
 	filter: invert(1);
 }
 
-#anim4
-{
+#anim4 {
 	z-index: 0;
 	position: absolute;
 	left: 250px;
@@ -151,8 +131,7 @@ header
 	filter: invert(1);
 }
 
-#anim5
-{
+#anim5 {
 	z-index: 0;
 	position: absolute;
 	left: 250px;
@@ -161,8 +140,7 @@ header
 	filter: invert(1);
 }
 
-#anim6
-{
+#anim6 {
 	z-index: 0;
 	position: absolute;
 	left: 500px;
@@ -171,8 +149,7 @@ header
 	filter: invert(1);
 }
 
-#anim7
-{
+#anim7 {
 	z-index: 0;
 	position: absolute;
 	left: 500px;
@@ -181,101 +158,80 @@ header
 	filter: invert(1);
 }
 
-@keyframes Bounce
-{
-	0%
-	{
+@keyframes Bounce {
+	0% {
 		transform: translateX(2000px) translateY(-800px) rotate(800deg);
 	}
 
-	50%
-	{
+	50% {
 		transform: translateX(500px) translateY(0) rotate(400deg);
 	}
 
-	100%
-	{
+	100% {
 		transform: translateX(-300px) translateY(-400px) rotate(0deg);
 	}
 }
 
-@keyframes BounceAlter
-{
-	0%
-	{
+@keyframes BounceAlter {
+	0% {
 		transform: translateX(2000px) translateY(-400px) rotate(800deg);
 	}
 
-	50%
-	{
+	50% {
 		transform: translateX(1000px) translateY(0) rotate(400deg);
 	}
 
-	100%
-	{
+	100% {
 		transform: translateX(-100px) translateY(-800px) rotate(0deg);
 	}
 }
 
-@keyframes Roll
-{
-	0%
-	{
+@keyframes Roll {
+	0% {
 		transform: translateX(2000px) rotate(800deg);
 	}
 
-	100%
-	{
+	100% {
 		transform: translateX(-100px) rotate(0deg);
 	}
 }
 
-@keyframes Fall
-{
-	0%
-	{
+@keyframes Fall {
+	0% {
 		transform: translateY(-500px) rotate(180deg);
 	}
 
-	100%
-	{
+	100% {
 		transform: translateY(100px) rotate(180deg);
 	}
 }
 
-@keyframes FallLeaf
-{
-	0%
-	{
-		transform: translateX(800px)  translateY(-500px) rotate(180deg);
+@keyframes FallLeaf {
+	0% {
+		transform: translateX(800px) translateY(-500px) rotate(180deg);
 	}
 
-	50%
-	{
-		transform: translateX(400px)  translateY(-200px) rotate(180deg);
+	50% {
+		transform: translateX(400px) translateY(-200px) rotate(180deg);
 	}
 
-	100%
-	{
-		transform: translateX(800px)  translateY(100px) rotate(180deg);
+	100% {
+		transform: translateX(800px) translateY(100px) rotate(180deg);
 	}
 }
 
 /*main*/
-section
-{
+section {
 	font-family: 'Montserrat', cursive;
 }
 
 /*hr*/
-hr
-{
+hr {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
 /*sponsors logos*/
-#logos img
-{
+#logos img {
 	width: 60%;
 }

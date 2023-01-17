@@ -1,29 +1,25 @@
-#contAve, #contFou
-{
+#contAve,
+#contFou {
 	display: none;
 	transition: 0.8s;
 }
 
-#contImg
-{
+#contImg {
 	object-fit: cover;
 	width: 500px;
 }
 
-#zipForm
-{
+#zipForm {
 	position: relative;
 }
 
-#zipList
-{
+#zipList {
 	position: absolute;
 	max-height: 300px;
 	overflow-y: auto;
 }
 
-#zipList li:hover
-{
+#zipList li:hover {
 	background-color: #2c3f60;
 	color: #fff;
 }

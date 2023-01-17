@@ -1,26 +1,22 @@
 /*html*/
-h1
-{
+h1 {
 	font-family: 'Finger Paint', cursive;
 }
 
-body
-{
+body {
 	background-image: url("../img/pattern-randomized.svg");
 	background-attachment: fixed;
 	background-size: cover;
 	/* background by SVGBackgrounds.com */
 }
 
-main
-{
+main {
 	background-color: #fff;
 	width: 80%;
 	margin: auto;
 }
 
-h4
-{
+h4 {
 	background-color: #fcc848;
 	padding: 10px;
 	color: #2c3f60;
@@ -29,7 +25,6 @@ h4
 	border-radius: 4px;
 }
 
-.maintext
-{
+.maintext {
 	font-size: 1.3em;
 }
