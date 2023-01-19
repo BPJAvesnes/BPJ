@@ -15,7 +15,6 @@
 		<title>BPJ - Bourses Aux Projets Jeunes</title>
 	</head>
 	<body>
-		<!--navbar-->
 		<nav class="navbar navbar-expand-lg navbar-dark" aria-label="navbar" id="mainnav">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#"><img src="img/logobpj.jpg" alt="logobpj" width="125px"></a>
@@ -74,8 +73,10 @@
 			</div>
 			<!--main content-->
 			<section class="container mt-5">
-				<div class="row mb-5">
-					<iframe height="500" src="https://www.youtube.com/embed/1YC8xYFO4z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="row mb-5 videoBpjOut">
+					<video class="videoBpj" controls
+						poster="./docs/bpj/BPJ.jpg"
+						src="./docs/bpj/BPJ.mp4"></video>
 				</div>
 				<hr>
 				<div class="row justify-content-around">
@@ -124,7 +125,12 @@
 						<img src="img/LogoC2SA.png" alt="logos">
 					</div>
 				</div>
+
+
 			</section>
+
+
+
 		</main>
 		<!--footer-->
 		<footer>
@@ -145,7 +151,7 @@
 				</div>
 				<div id="socials">
 					<div>
-						<a href="#"><img class="svgfill" src="img/logofb.svg" width="32px"> Notre page facebook</a>
+						<a target="_blank" href="https://www.facebook.com/madisson.samuel"><img class="svgfill" src="img/logofb.svg" width="32px"> Notre page facebook</a>
 					</div>
 					<div>
 						<a href="#"><img class="svgfill" src="img/logoyt.svg" width="32px"> Notre chaîne Youtube</a>

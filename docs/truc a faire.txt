@@ -1,14 +1,14 @@
-[] Accueil changé la vidéo mettre un de M. Frappat
+tom : [x] Accueil changé la vidéo mettre un de M. Frappat
 
-[] changer l'actualité en mettant les différent réseau des structure
+tom : [] changer l'actualité en mettant les différent réseau des structure
 
 kylian : [] refair le fichier règlement pour le mettre en plus propre
 
-[] galerie mettre des vrais image et vrais projet
+tom : [] galerie mettre des vrais image et vrais projet
 
 
 [] le footer notre page facebook / Youtube, soit à virer soit à mettre des vrais liens
 
 tom : [x] header mettre les liens en target="\_blank"
 
-tom : [] organiser CSS
+tom : [x] organiser CSS

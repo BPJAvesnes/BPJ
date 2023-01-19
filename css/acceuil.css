@@ -28,3 +28,15 @@ h4 {
 .maintext {
 	font-size: 1.3em;
 }
+
+
+.videoBpjOut {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.videoBpj {
+	height: 500px;
+	width: auto;
+}
