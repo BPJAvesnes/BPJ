@@ -109,3 +109,7 @@ body {
     width: 100%;
     height: auto;
 }
+
+.carouselObject.img > .carousel > .carousel_container > .carousel_item {
+    cursor: pointer;
+}
