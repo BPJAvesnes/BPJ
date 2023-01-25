@@ -4,6 +4,7 @@
 @import './contact.css';
 @import './footer.css';
 @import './galerie.css';
+@import './carousel.css';
 
 /* multiple item carousel */
 [id^="recipeCarousel"] .card-img-overlay {

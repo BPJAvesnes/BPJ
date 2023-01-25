@@ -1,0 +1,111 @@
+body {
+    overflow-x: hidden;
+}
+
+.carouselObject {
+    height: 300px;
+    width: 100%;
+}
+
+/* .carousel_container, */
+.carousel_item
+{
+    height: 200px;
+    width: 200px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_container {
+    transition: all .5s;
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel_container::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.carousel_item {
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.courasel_next,
+.courasel_prev {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #fff center center no-repeat;
+    background-size: 24px 24px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -24px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.courasel_next:hover,
+.courasel_prev:hover {
+    transform: scale(1.2);
+}
+.courasel_next {
+    background-image: url('../img/chevron-right.svg');
+    right: 5px;
+}
+
+.courasel_prev {
+    background-image: url('../img/chevron-left.svg');
+    right: auto;
+    left: 5px;
+}
+
+.carouselScal {
+    visibility: hidden;
+    user-select: none;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000000c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselScalContent {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.carouselClose {
+    background: url('../img/x.svg') center center no-repeat;
+    background-size: 50px 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.carouselImg {
+    margin-left: 45px;
+    --proportion: calc(90% - 40px);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: auto;
+    width: var(--proportion);
+}
+
+.carouselImg > img {
+    width: 100%;
+    height: auto;
+}
