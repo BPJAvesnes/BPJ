@@ -36,6 +36,9 @@ class Carousel
         this.root.appendChild(this.carouselContainer);
         this.element.appendChild(this.root);
 
+        this.scalRoot = this.makeDiv('carouselScal');
+        this.scalContent = this.makeDiv('carouselScalContent');
+
         // pour mettre tout les element dans dans le carouselEl
         this.items = children.map(el =>
         {
@@ -61,7 +64,6 @@ class Carousel
 
         if (this.options.image)
         {
-            this.scalRoot = this.makeDiv('carouselScal');
 
             this.img = document.createElement('img');
 
@@ -130,9 +132,6 @@ class Carousel
         let translateX = index * -100 / this.items.length;
         this.carouselContainer.style.transform = `translate3d(${translateX}%, 0, 0)`;
         this.courrentItem = index;
-
-        console.log(this.courrentItem);
-        console.log(this.items[this.courrentItem + this.options.slideVisible]);
     }
 
     /**
@@ -140,21 +139,29 @@ class Carousel
      */
     imgScale()
     {
-        let scalContent = this.makeDiv('carouselScalContent');
         let scalImg     = this.makeDiv('carouselImg');
         let scalClose   = this.makeDiv('carouselClose');
 
-        this.scalRoot.appendChild(scalContent);
-        scalContent.appendChild(scalImg);
-        scalContent.appendChild(scalClose);
+        this.scalRoot.appendChild(this.scalContent);
+        this.scalContent.appendChild(scalImg);
+        this.scalContent.appendChild(scalClose);
         scalImg.appendChild(this.img);
 
+        this.siezBoxScale(scalImg);
+
+        window.addEventListener('resize', () => this.siezBoxScale(scalImg));
+        scalClose.addEventListener('click', () => this.scalRoot.style.visibility = 'hidden');
+    }
+
+    /**
+     *
+     * @param {HTMLElement} box
+     */
+    siezBoxScale(box)
+    {
         let windowsHeight = window.innerHeight - 60
 
-        scalImg.style.maxHeight = `${windowsHeight}px`
-        scalImg.style.maxWidth = `${windowsHeight}px`
-
-        scalClose.addEventListener('click', () => this.scalRoot.style.visibility = 'hidden');
+        box.style.maxHeight = `${windowsHeight}px`
     }
 }
 

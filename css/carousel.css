@@ -102,12 +102,17 @@ body {
     background-color: #fff;
     border-radius: 10px;
     height: auto;
+    display: flex;
+    justify-content: center;
     width: var(--proportion);
 }
 
 .carouselImg > img {
-    width: 100%;
     height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
 }
 
 .carouselObject.img > .carousel > .carousel_container > .carousel_item {
