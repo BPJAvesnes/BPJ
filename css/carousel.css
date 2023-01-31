@@ -97,8 +97,8 @@ body {
 
 .carouselImg {
     margin-left: 45px;
-    --proportion: calc(90% - 40px);
-    padding: 20px;
+    --proportion: calc(90% - 10px);
+    padding: 5px;
     background-color: #fff;
     border-radius: 10px;
     height: auto;
@@ -117,4 +117,18 @@ body {
 
 .carouselObject.img > .carousel > .carousel_container > .carousel_item {
     cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+    .carouselScalContent {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    .carouselImg {
+        margin: 0;
+        width: auto;
+    }
+    .carouselClose {
+        margin-left: auto;
+    }
 }

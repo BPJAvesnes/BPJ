@@ -20,6 +20,7 @@ class Carousel
             // permet de changer les valeurs que l'on veux
             options
         );
+        this.optionsObject = options;
 
         // permet de voir le nombre d'element souheter a la fois
 
@@ -61,6 +62,10 @@ class Carousel
 
         this.setStyle();
         this.createNavigation();
+
+        this.mediaQuery();
+        window.addEventListener('resize', this.mediaQuery.bind(this));
+
 
         if (this.options.image)
         {
@@ -162,6 +167,16 @@ class Carousel
         let windowsHeight = window.innerHeight - 60
 
         box.style.maxHeight = `${windowsHeight}px`
+    }
+
+    mediaQuery()
+    {
+        if (window.innerWidth <= 1050)
+            this.options.slideVisible = 1;
+        else
+            this.options.slideVisible = this.optionsObject.slideVisible;
+
+        this.setStyle();
     }
 }
 
