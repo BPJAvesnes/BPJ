@@ -16,3 +16,16 @@
 	width: 25rem;
 	margin: auto auto 25px auto;
 }
+
+.cardContentImg {
+	height: 500px;
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cardContentImg > img {
+	width: 90%;
+	height: auto;
+}
