@@ -182,8 +182,8 @@ class Carousel
 
 const car = document.querySelectorAll('.carouselObject')
 
-document.addEventListener("DOMContentLoaded", () => {
-
+document.addEventListener('load', () =>
+{
     for (const els of car )
     {
         new Carousel(els,
