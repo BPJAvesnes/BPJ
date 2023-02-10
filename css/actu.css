@@ -21,6 +21,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	clip-path: fill-box;
 }
 
 .cardContentImg > img {
@@ -29,7 +30,6 @@
 }
 
 .cardIframe {
-
 	height: 500px;
 }
 
